@@ -2,6 +2,7 @@ package uz.smd.fantastic.audiorecorder;
 
 
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -149,14 +150,18 @@ public class AudioListFragment extends Fragment implements AudioListAdapter.onIt
 
     private void pauseAudio() {
         mediaPlayer.pause();
-        playBtn.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.player_play_btn, null));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            playBtn.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.player_play_btn, null));
+        }
         isPlaying = false;
         seekbarHandler.removeCallbacks(updateSeekbar);
     }
 
     private void resumeAudio() {
         mediaPlayer.start();
-        playBtn.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.player_pause_btn, null));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            playBtn.setImageDrawable(getActivity().getResources().getDrawable(R.drawable.player_pause_btn, null));
+        }
         isPlaying = true;
 
         updateRunnable();
