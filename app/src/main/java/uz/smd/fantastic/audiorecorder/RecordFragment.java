@@ -86,14 +86,14 @@ public class RecordFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         /*  Check, which button is pressed and do the task accordingly
-        */
+         */
         switch (v.getId()) {
             case R.id.record_list_btn:
                 /*
                 Navigation Controller
                 Part of Android Jetpack, used for navigation between both fragments
                  */
-                if(isRecording){
+                if (isRecording) {
                     AlertDialog.Builder alertDialog = new AlertDialog.Builder(getContext());
                     alertDialog.setPositiveButton("OKAY", new DialogInterface.OnClickListener() {
                         @Override
@@ -112,7 +112,7 @@ public class RecordFragment extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.record_btn:
-                if(isRecording) {
+                if (isRecording) {
                     //Stop Recording
                     stopRecording();
 
@@ -121,7 +121,7 @@ public class RecordFragment extends Fragment implements View.OnClickListener {
                     isRecording = false;
                 } else {
                     //Check permission to record audio
-                    if(checkPermissions()) {
+                    if (checkPermissions()) {
                         //Start Recording
                         startRecording();
 
@@ -196,7 +196,7 @@ public class RecordFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onStop() {
         super.onStop();
-        if(isRecording){
+        if (isRecording) {
             stopRecording();
         }
     }

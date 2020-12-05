@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/centermenu"
+    android:gravity="center">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="-20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRandom"
+                style="@style/CardViews1"
+                android:layout_marginStart="-30dp">
+
+                <Button
+                    android:id="@+id/btnRandom"
+                    style="@style/button.SignUp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="Random So’z"
+                    android:textSize="24sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/ic_baseline_navigate_next_24" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRandom1"
+                style="@style/CardViews1"
+                android:layout_marginStart="-30dp">
+
+                <Button
+                    android:id="@+id/btnRandom1"
+                    style="@style/button.SignUp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="O’g'ri"
+                    android:textSize="24sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/ic_baseline_navigate_next_24" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carRandom2"
+                style="@style/CardViews1"
+                android:layout_marginStart="-30dp">
+
+                <Button
+                    android:id="@+id/btnRandom2"
+                    style="@style/button.SignUp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="Salom"
+                    android:textSize="24sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/ic_baseline_navigate_next_24" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRandom3"
+                style="@style/CardViews1"
+                android:layout_marginStart="-30dp">
+
+                <Button
+                    android:id="@+id/btnRandom3"
+                    style="@style/button.SignUp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="Bog’"
+                    android:textSize="24sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/ic_baseline_navigate_next_24" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRandom4"
+                style="@style/CardViews1"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-30dp">
+
+                <Button
+                    android:id="@+id/btnRandom4"
+                    style="@style/button.SignUp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="Kelajak"
+                    android:textSize="24sp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/ic_baseline_navigate_next_24" />
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        <androidx.cardview.widget.CardView-->
+            <!--            android:id="@+id/cardNext"-->
+            <!--            android:layout_marginStart="-10dp"-->
+            <!--            android:layout_marginEnd="10dp"-->
+            <!--            style="@style/CardViews1"-->
+            <!--            android:layout_width="match_parent">-->
+
+            <!--            <Button-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:id="@+id/btnNext"-->
+            <!--                style="@style/button.SignUp"-->
+            <!--                android:paddingHorizontal="20dp"-->
+            <!--                android:text="Keingisi"-->
+            <!--                android:textSize="24sp"-->
+
+            <!--                />-->
+            <!--        </androidx.cardview.widget.CardView>-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
