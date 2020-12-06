@@ -45,9 +45,10 @@ class VoiceFragment:Fragment(R.layout.fragment_voice) {
 
 
 
-
+var k=1
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        k=1
         if (ActivityCompat.checkSelfPermission(
                 requireContext(),
                 recordPermission
@@ -66,6 +67,15 @@ onClick()
     fun onClick() {
         /*  Check, which button is pressed and do the task accordingly
          */
+        btnPlay.setOnClickListener {
+            if (k==1){
+            btnPlay.setImageResource(R.drawable.player_pause_btn)
+            k++}
+            else{
+                k=1
+                btnPlay.setImageResource(R.drawable.player_play_btn)
+            }
+        }
         btnSendAudio.setOnClickListener {
             if (isRecording) {
                 val alertDialog = AlertDialog.Builder(
