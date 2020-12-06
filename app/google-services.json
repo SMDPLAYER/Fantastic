@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "542380410930",
+    "project_id": "help-til",
+    "storage_bucket": "help-til.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542380410930:android:05b62155b2aa5e0f47942b",
+        "android_client_info": {
+          "package_name": "uz.smd.fantastic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542380410930-90pkrpedi1git2n87ei6964nh7oip6rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6X9tNwXOrvUE-uwQ_QBmzCqrNc1uqWfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542380410930-90pkrpedi1git2n87ei6964nh7oip6rh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

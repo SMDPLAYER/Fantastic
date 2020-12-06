@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/centermenu"
-    android:gravity="center">
-
-
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_margin="20dp"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio kitobni tanlang"
+        android:textColor="#fff"
+        android:textSize="34sp" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,29 +22,31 @@
             android:layout_height="wrap_content"
             android:paddingEnd="-20dp"
             android:gravity="center"
-            android:orientation="vertical"
-            android:paddingStart="20dp">
+            android:paddingStart="20dp"
+            android:orientation="vertical">
+
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardRandom"
                 style="@style/CardViews1"
                 android:layout_marginStart="-30dp">
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="end"
-                    android:background="@drawable/ic_baseline_navigate_next_24" />
+
                 <Button
                     android:id="@+id/btnRandom"
                     style="@style/button.SignUp"
                     android:layout_gravity="center"
                     android:paddingHorizontal="20dp"
-                    android:text="Random So’z"
+                    android:text="O’tgan Kunlar "
+
                     android:textSize="24sp"
 
                     />
 
-
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@drawable/ic_baseline_navigate_next_24" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -51,7 +59,7 @@
                     style="@style/button.SignUp"
                     android:layout_gravity="center"
                     android:paddingHorizontal="20dp"
-                    android:text="O’g'ri"
+                    android:text="Anor"
                     android:textSize="24sp"
 
                     />
@@ -73,7 +81,7 @@
                     style="@style/button.SignUp"
                     android:layout_gravity="center"
                     android:paddingHorizontal="20dp"
-                    android:text="Salom"
+                    android:text="O’gri"
                     android:textSize="24sp"
 
                     />
@@ -95,7 +103,7 @@
                     style="@style/button.SignUp"
                     android:layout_gravity="center"
                     android:paddingHorizontal="20dp"
-                    android:text="Bog’"
+                    android:text="Dunyoning ishlari"
                     android:textSize="24sp"
 
                     />
@@ -118,7 +126,7 @@
                     style="@style/button.SignUp"
                     android:layout_gravity="center"
                     android:paddingHorizontal="20dp"
-                    android:text="Kelajak"
+                    android:text="Dunyoning ishlari"
                     android:textSize="24sp"
 
                     />
@@ -129,26 +137,6 @@
                     android:layout_gravity="end"
                     android:background="@drawable/ic_baseline_navigate_next_24" />
             </androidx.cardview.widget.CardView>
-
-
-            <!--        <androidx.cardview.widget.CardView-->
-            <!--            android:id="@+id/cardNext"-->
-            <!--            android:layout_marginStart="-10dp"-->
-            <!--            android:layout_marginEnd="10dp"-->
-            <!--            style="@style/CardViews1"-->
-            <!--            android:layout_width="match_parent">-->
-
-            <!--            <Button-->
-            <!--                android:layout_gravity="center"-->
-            <!--                android:id="@+id/btnNext"-->
-            <!--                style="@style/button.SignUp"-->
-            <!--                android:paddingHorizontal="20dp"-->
-            <!--                android:text="Keingisi"-->
-            <!--                android:textSize="24sp"-->
-
-            <!--                />-->
-            <!--        </androidx.cardview.widget.CardView>-->
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
