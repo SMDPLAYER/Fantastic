@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/userFragment">
 
     <fragment
         android:id="@+id/recordFragment"
@@ -30,19 +30,19 @@
         android:label="MainFragment"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_userFragment"
-            app:destination="@id/userFragment"
-            app:exitAnim="@anim/fade_out"
-            app:popEnterAnim="@anim/fade_in"
-            app:enterAnim="@anim/slide_in"
-            app:popExitAnim="@anim/slide_out"/>
-        <action
             app:exitAnim="@anim/fade_out"
             app:popEnterAnim="@anim/fade_in"
             app:enterAnim="@anim/slide_in"
             app:popExitAnim="@anim/slide_out"
             android:id="@+id/action_mainFragment_to_booksFragment"
             app:destination="@id/booksFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_voiceFragment"
+            app:destination="@id/voiceFragment"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
     </fragment>
     <fragment
         android:id="@+id/userFragment"
@@ -50,11 +50,19 @@
         android:label="UserFragment"
         tools:layout="@layout/fragment_user" >
         <action
-            android:id="@+id/action_userFragment_to_checkWords"
-            app:destination="@id/checkWords" />
-        <action
             android:id="@+id/action_userFragment_to_voiceFragment"
-            app:destination="@id/voiceFragment" />
+            app:destination="@id/voiceFragment"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
+        <action
+            android:id="@+id/action_userFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
     </fragment>
     <fragment
         android:id="@+id/bookPartsFragment"
@@ -89,16 +97,11 @@
         tools:layout="@layout/fragment_text" >
         <action
             android:id="@+id/action_textFragment_to_congratFragment"
-            app:destination="@id/congratFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/checkWords"
-        android:name="uz.smd.fantastic.fragments.CheckWords"
-        android:label="CheckWords"
-        tools:layout="@layout/fragment_check_words" >
-        <action
-            android:id="@+id/action_checkWords_to_congratFragment"
-            app:destination="@id/congratFragment" />
+            app:destination="@id/congratFragment"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
     </fragment>
     <fragment
         android:id="@+id/congratFragment"
@@ -112,6 +115,10 @@
         tools:layout="@layout/fragment_voice">
         <action
             android:id="@+id/action_voiceFragment_to_congratFragment"
-            app:destination="@id/congratFragment" />
+            app:destination="@id/congratFragment"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
     </fragment>
 </navigation>

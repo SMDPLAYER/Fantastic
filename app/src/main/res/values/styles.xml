@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
     <style name="CardViews">
         <item name="cardCornerRadius">20dp</item>
@@ -41,7 +42,7 @@
         <item name="cardElevation">10dp</item>
         <item name="cardPreventCornerOverlap">true</item>
         <item name="cardUseCompatPadding">true</item>
-        <item name="android:layout_height">400dp</item>
+        <item name="android:layout_height">410dp</item>
     </style>
     <style name="button">
         <item name="android:layout_width">match_parent</item>

@@ -68,9 +68,10 @@
                     android:layout_height="50dp"
                     android:background="@color/colorPrimary">
 
-                    <TextView
+                    <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
                         android:gravity="center"
                         android:text="00:15"
                         android:textColor="#fff"
@@ -91,9 +92,10 @@
                     android:layout_height="50dp"
                     android:background="@color/colorPrimary">
 
-                    <TextView
+                    <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
                         android:gravity="center"
                         android:text="1:32"
                         android:textColor="#fff"
@@ -142,7 +144,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-            <TextView
+            <EditText
                 android:id="@+id/textCountWord"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -159,8 +161,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardAudio"
-                style="@style/CardViews1"
+                style="@style/CardViews"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
 
                 app:layout_constraintStart_toStartOf="parent"

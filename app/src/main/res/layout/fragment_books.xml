@@ -32,6 +32,7 @@
                 android:layout_marginStart="-30dp">
 
                 <Button
+
                     android:id="@+id/btnRandom"
                     style="@style/button.SignUp"
                     android:layout_gravity="center"

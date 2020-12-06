@@ -40,7 +40,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             navController!!.navigate(R.id.action_mainFragment_to_booksFragment)
         }
         btnUser.setOnClickListener {
-            navController!!.navigate(R.id.action_mainFragment_to_userFragment)
+            navController!!.navigate(R.id.action_mainFragment_to_voiceFragment)
         }
 
     }

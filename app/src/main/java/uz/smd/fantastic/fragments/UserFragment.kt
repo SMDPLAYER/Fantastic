@@ -24,10 +24,10 @@ class UserFragment:Fragment(R.layout.fragment_user) {
 
     private fun clickListener() {
         btnSendVoice.setOnClickListener {
-            navController!!.navigate(R.id.action_userFragment_to_checkWords)
+            navController!!.navigate(R.id.action_userFragment_to_voiceFragment)
         }
         btnCheckVoice.setOnClickListener {
-            navController!!.navigate(R.id.action_userFragment_to_checkWords)
+            navController!!.navigate(R.id.action_userFragment_to_mainFragment)
         }
 
     }
