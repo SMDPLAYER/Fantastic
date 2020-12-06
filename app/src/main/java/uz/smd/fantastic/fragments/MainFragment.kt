@@ -16,6 +16,7 @@ import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_main.*
 import uz.smd.fantastic.R
 import java.io.IOException
 import java.text.SimpleDateFormat
@@ -24,40 +25,25 @@ import java.util.*
 /**
  * Created by Siddikov Mukhriddin on 12/5/20
  */
-class MainFragment:Fragment(R.layout.fragment_main) {
+class MainFragment : Fragment(R.layout.fragment_main) {
     private var navController: NavController? = null
-
-
-
-
-
-
-
-
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
         navController = Navigation.findNavController(view)
-
-
-
-
+        clickListener()
     }
 
-    fun onClick(v: View) {
-        /*  Check, which button is pressed and do the task accordingly
-         */
-        when (v.id) {
-            R.id.record_list_btn ->
-   navController!!.navigate(R.id.action_recordFragment_to_audioListFragment)
-
+    private fun clickListener() {
+        btnAudio.setOnClickListener {
+            navController!!.navigate(R.id.action_mainFragment_to_booksFragment)
         }
+        btnUser.setOnClickListener {
+            navController!!.navigate(R.id.action_mainFragment_to_userFragment)
+        }
+
     }
-
-
 
 
 }

@@ -12,7 +12,7 @@ import uz.smd.fantastic.R
 /**
  * Created by Siddikov Mukhriddin on 12/5/20
  */
-class UserFragment:Fragment(R.layout.fragment_user) {
+class VoiceFragment:Fragment(R.layout.fragment_voice) {
     private var navController: NavController? = null
 
 

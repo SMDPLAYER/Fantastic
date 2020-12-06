@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/centermenu"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardText"
+
+                style="@style/CardViews3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="Darbozasi sharqi-janubiyga qaratib qurilg‘an bu dong‘dor saroyni Toshkand, Samarqand va Buxoro savdogarlari egallaganlar, saroydagi bir-ikki hujrani istisno qilish bilanboshqalari musofirlar ila to‘la. Saroy ahli kunduzgi ish kuchlaridan bo‘shab hujralarigaqaytqanlar, ko‘b hujralar kechlik osh pishirish ila mashg‘ul, shuning uchun kunduzgiga qarag‘andasaroy jonliq: kishilarning shaqillashib so‘zlashishlari, xoxolab kulishishlari saroyni ko‘kkako‘targudek. " />
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/player_play_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:src="@drawable/record_btn_recording"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardText" />
+
+            <SeekBar
+                android:id="@+id/player_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_play_btn" />
+
+            <ImageView
+                android:id="@+id/btnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/play"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_seekbar" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAudio"
+                style="@style/CardViews1"
+                android:layout_width="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPlay">
+
+                <Button
+                    android:id="@+id/btnAudio"
+                    style="@style/button.SignUp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="Jo'natish"
+                    android:textSize="24sp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

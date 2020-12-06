@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/recordFragment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/recordFragment"
@@ -24,4 +24,94 @@
         android:name="uz.smd.fantastic.audiorecorder.AudioListFragment"
         android:label="fragment_audio_list"
         tools:layout="@layout/fragment_audio_list" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="uz.smd.fantastic.fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_userFragment"
+            app:destination="@id/userFragment"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
+        <action
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"
+            android:id="@+id/action_mainFragment_to_booksFragment"
+            app:destination="@id/booksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="uz.smd.fantastic.fragments.UserFragment"
+        android:label="UserFragment"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_checkWords"
+            app:destination="@id/checkWords" />
+        <action
+            android:id="@+id/action_userFragment_to_voiceFragment"
+            app:destination="@id/voiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookPartsFragment"
+        android:name="uz.smd.fantastic.fragments.BookPartsFragment"
+        android:label="BookPartsFragment"
+        tools:layout="@layout/fragment_book_parts" >
+        <action
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"
+            android:id="@+id/action_bookPartsFragment_to_textFragment"
+            app:destination="@id/textFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/booksFragment"
+        android:name="uz.smd.fantastic.fragments.BooksFragment"
+        android:label="BooksFragment"
+        tools:layout="@layout/fragment_books" >
+        <action
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"
+            android:id="@+id/action_booksFragment_to_bookPartsFragment"
+            app:destination="@id/bookPartsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/textFragment"
+        android:name="uz.smd.fantastic.fragments.TextFragment"
+        android:label="TextFragment"
+        tools:layout="@layout/fragment_text" >
+        <action
+            android:id="@+id/action_textFragment_to_congratFragment"
+            app:destination="@id/congratFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkWords"
+        android:name="uz.smd.fantastic.fragments.CheckWords"
+        android:label="CheckWords"
+        tools:layout="@layout/fragment_check_words" >
+        <action
+            android:id="@+id/action_checkWords_to_congratFragment"
+            app:destination="@id/congratFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/congratFragment"
+        android:name="uz.smd.fantastic.fragments.CongratFragment"
+        android:label="CongratFragment"
+        tools:layout="@layout/fragment_congrat" />
+    <fragment
+        android:id="@+id/voiceFragment"
+        android:name="uz.smd.fantastic.fragments.VoiceFragment"
+        android:label="VoiceFragment"
+        tools:layout="@layout/fragment_voice">
+        <action
+            android:id="@+id/action_voiceFragment_to_congratFragment"
+            app:destination="@id/congratFragment" />
+    </fragment>
 </navigation>
